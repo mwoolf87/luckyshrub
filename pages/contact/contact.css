@@ -1,0 +1,94 @@
+body {
+    background-image: url("../../assets/contactus_background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    height: 100vh;
+}
+
+nav {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(26, 67, 50,);
+}
+
+#overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(26, 67, 50, 0.6);
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    background: #fff;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus, textarea:focus {
+border-bottom: 1px solid #1b4332;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #1b4332;
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: #1b4332;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.error  {
+    color: #ff0000;
+}
+
+.error-border {
+    border-bottom: 1px solid #ff0000;
+}
+
+#success {
+    color: #28A745;
+}
+
+

@@ -1,0 +1,117 @@
+body {
+    background-color: #EDF6F9;
+    font-family: sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16px;
+}
+section.flex-container {
+display: flex;
+} 
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.image__img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.image__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 25px;
+}
+
+.image__title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 2rem;
+    margin-top: 0.25em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media screen and (width < 950px) {
+    .image-container {
+            width: 100%;
+            display: flex;
+        }
+    .image__title {
+            display: flex;
+            font-size: 2.5rem;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .image__description {
+            font-size: 1em;
+            margin-top: 0.25em;
+            margin-left: 5%;
+            margin-right: 5%;
+            align-items: center;
+            justify-content: center;
+        }
+}
+
+@media screen and (width < 769px) {
+    header>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            height: 300px;
+        }
+    .image__title {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .image__description {
+        font-size: 1em;
+        margin-top: 0.25em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    nav ul li {
+        font-size: 1.25rem;
+    }
+    a.button {
+        display: none;
+    }
+}
+
+.button {
+    padding: 1rem;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.button:hover {
+    background-color: #081C15;
+    color: #ffffff;
+}

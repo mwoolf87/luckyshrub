@@ -1,0 +1,36 @@
+section.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    color: #1B4332;
+    text-underline-position: below;
+    text-decoration: underline;
+}
+
+.about {
+    background-color: #1B4332;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.25rem;
+    padding: 2%;
+}
+
+.about__img {
+    display: flex;
+    margin-top: 2%;
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (width <=450px) {
+.about {
+    font-size: 1rem;
+    padding: 2%;
+    }
+}
